@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/strInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="baidu_map" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_start_pos" />
+
+            <EditText
+                android:id="@+id/edt_start_pos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:hint="请输入起点:（默认的是当前位置）"
+                android:paddingLeft="10dp"
+                android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_end_pos" />
+
+            <EditText
+                android:id="@+id/edt_end_pos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入终点:（默认的是选中的车辆所在位置）"
+                android:paddingLeft="10dp"
+                android:singleLine="true" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_walkroute"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="searchButtonProcess"
+            android:text="步行路线"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btn_bikeroute"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="searchButtonProcess"
+            android:text="骑车路线"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/last_node"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="searchButtonProcess"
+            android:text="上一站"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/next_node"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="searchButtonProcess"
+            android:text="下一站"
+            android:layout_weight="1"/>
+     </LinearLayout>
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </LinearLayout>
+</RelativeLayout>

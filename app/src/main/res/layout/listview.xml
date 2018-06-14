@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/lv_main"
+        android:layout_width="match_parent"
+        android:layout_height="550dp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btn_compute"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_weight='2'
+        android:paddingBottom="0dp"
+        android:text="@string/result_compute"
+        android:textSize="19sp" />
+
+    <Button
+        android:id="@+id/http_send"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight='3'
+        android:onClick="open_link"
+        android:text="@string/http_send" /></LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/scan_redbill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:onClick="btn_clickredbill"
+            android:text="@string/scan_redbill" />
+    </LinearLayout>
+
+
+</LinearLayout>

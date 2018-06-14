@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="xr.example.com.bishe">
+
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="andorid.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <application
+        android:theme="@style/AppTheme"
+        android:icon="@mipmap/ic_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+       >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="lEs8DDeKgY7PK4YADuDYX8NVGGw4p5pF"  />
+
+        <activity android:name="xr.example.com.bishe.Welcome.welcomeActivity"  android:theme="@style/AppTheme1">
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity android:name="xr.example.com.bishe.BaiduMap.bai_route"/>
+        <activity android:name="xr.example.com.bishe.Welcome.MainActivity"/>
+        <activity android:name="xr.example.com.bishe.Welcome.MessActivity"
+            android:allowBackup="true"/>
+        <activity android:name="xr.example.com.bishe.Algorism.Kcluster"/>
+        <activity android:name="xr.example.com.bishe.Explanation.about"/>
+        <activity android:name="xr.example.com.bishe.Welcome.openlink.scan" />
+        <activity android:name="xr.example.com.bishe.Welcome.openlink.open_link"/>
+        <activity android:name="xr.example.com.bishe.Welcome.CaptureActivity"/>
+        <activity android:name="xr.example.com.bishe.Explanation.use"/>
+        <activity android:name="xr.example.com.bishe.BaiduMap.bai_clustered"/>
+        <activity android:name="xr.example.com.bishe.Explanation.number" />
+        <activity android:name="xr.example.com.bishe.Explanation.moreinfo" />
+        <activity android:name="xr.example.com.bishe.BaiduMap.bai_dist"/>
+    </application>
+
+</manifest>

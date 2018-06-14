@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">停位分析</string>
+    <string name="about">
+        　　\t\t\t\t\t\t
+        -------安徽农业大学-------\n
+    \t\t\t\t\t\t物联网工程１班徐锐毕业设计
+    </string>
+
+    <string name="use">使用说明 : \n
+        \t\t①先科普地理常识：\n
+        全球经纬度的取值范围：纬度-90~90，经度-180~180 中国的经纬度范围大约为：纬度3.86~53.55，
+        经度73.66~135.05。\n
+        \t\t②本软件只在中国安徽合肥测试使用。\n
+        \t\t③软件基于百度地图SDK开发而成。\n
+  　　\t\t\t\t\t\t\t最后感谢您的使用</string>
+    <string name="gengxin">版本: v1.1\n
+        \t\t\t\tv1.0----实现提取手机短信功能\n
+        \t\t\t\tv2.0----实现加入菜单功能\n
+        \t\t\t\tv3.0----实现地图定位功能\n
+        \t\t\t\tv4.0----实现全选取消全选等功能，不同Activity之间传送list类对象功能\n
+        \t\t\t\tv5.0----实现两点之间骑行步行线路及站点显示功能\n
+        \t\t\t\tv6.0----实现对消息的时间提取及显示补充功能\n
+        \t\t\t\tv7.0----实现支付宝接口API调用及支付的功能\n</string>
+    <string name="chuangzuo">版权归本人所有</string>
+    <string name="mainroad">单击附近主干道</string>
+    <string name="date">显示短信时间</string>
+    <string name="mess">显示短信内容</string>
+    <string name="lat">纬度：</string>
+    <string name="lon">经度：</string>
+    <string name="cluster_ok">手动聚类确定</string>
+    <string name="frequence_ok" >车辆数(长按有序显示)</string>
+    <string name="weichat_send">打开微信</string>
+    <string name="cluster_polished">系统优化聚点显示</string>
+    <string name="map_show">聚点地图显示</string>
+    <string name="scan_redbill" >扫码红包</string>
+    <string name="dist_bike">车辆离主干道距离：</string>
+    <string name="btn_transform">将短信经纬度转化为地址：</string>
+    <string name="manual_measure">手动测距</string>
+    <string name="timepassed">经过时间：</string>
+    <string name="numgeted">可获得积分：</string>
+    <string name="moreinfo">1.本页面旨在使骑行者能够有效的将车辆停到合理的区域，并能够为社区停车做出自己的一份贡献，当然
+        如果你well done，我们也会献上宝贵的物质奖励。\n
+        \t\t\t\t(1).如果所停位置为我们已规定的位置，且数量在非饱和状态（看牌子），则依据程度给予积分奖励，反之扣分。\n
+        \t\t\t\t(2).如果您能为我们提供合理的区域作为车辆停放需求的新的聚点，按照地址（经纬度）+停放数量的格式截二维码图发送到微信公众号，
+        则经系统内部审核通过后给予积分奖励，如果信息有假，我们将按照相关程序实施扣分及其他处罚。\n\n
+        2.如果你对软件有什么建议或意见，欢迎与我联系，QQ：3109197311。\n\n
+        3.如果你对我们的idea有好的补充，以及更多关于停车活动的奖励机制，请关注我的公众号：愈挫愈勇onlythestrongsurvive(~~~~长按复制)\n</string>
+    <string name="http_send" >打开网络数据链接</string>
+    <string name="result_compute">聚类处理</string>
+
+    <string-array name="lanlon_rate">
+        <item>0-20(S/N)</item>
+        <item>20-50(S/N)</item>
+        <item>50-70(S/N)</item>
+        <item>70-80(S/N)</item>
+        <item>80-90(S/N)</item>
+    </string-array>
+</resources>
